@@ -1,0 +1,45 @@
+services:
+  traefik:
+    image: traefik:v2.9
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.myresolver.acme.email=bartosz.pawel.sekiewicz@gmail.com"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "letsencrypt:/letsencrypt"
+    restart: always
+    networks:
+      - web
+
+  pixelinventor:
+    build: .
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.pixelinventor.rule=Host(`pixelinventor.com`)"
+      - "traefik.http.routers.pixelinventor.entrypoints=websecure"
+      - "traefik.http.routers.pixelinventor.tls.certresolver=myresolver"
+      - "traefik.http.services.pixelinventor.loadbalancer.server.port=80"
+      # Przekierowanie HTTP na HTTPS
+      - "traefik.http.routers.pixelinventor-http.rule=Host(`pixelinventor.com`)" 
+      - "traefik.http.routers.pixelinventor-http.entrypoints=web"
+      - "traefik.http.routers.pixelinventor-http.middlewares=https-redirect"
+      - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
+
+volumes:
+  letsencrypt:

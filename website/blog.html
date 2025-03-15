@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - PixelInventor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Dodanie pixelowego fontu -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Font Awesome dla ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Główny skrypt strony -->
+    <script src="js/main.js" defer></script>
+    <!-- Skrypt ładujący zawartość -->
+    <script src="js/content-loader.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Nagłówek strony -->
+        <header>
+            <div class="pixel-border">
+                <h1 class="pixel-text">Pixel<span>Inventor</span></h1>
+                <p class="tagline">Kreatywny Świat Młodego Programisty</p>
+            </div>
+        </header>
+        
+        <!-- Menu nawigacyjne -->
+        <nav>
+            <div class="pixel-border">
+                <ul>
+                    <li><a href="index.html" class="nav-button">Strona Główna</a></li>
+                    <li><a href="projects.html" class="nav-button">Projekty</a></li>
+                    <li><a href="blog.html" class="nav-button active">Blog</a></li>
+                    <li><a href="about-me.html" class="nav-button">O Mnie</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Sekcja główna -->
+        <main>
+            <!-- Strona bloga -->
+            <section id="blog" class="pixel-border">
+                <h2 class="section-title">Mój Blog</h2>
+                
+                <div class="blog-intro">
+                    <p>Witaj na moim blogu! Dzielę się tu swoimi doświadczeniami w programowaniu, tworzeniu gier, 
+                    pixel arcie i wszystkim, co mnie fascynuje w świecie technologii. Zapraszam do czytania!</p>
+                </div>
+                
+                <div class="blog-posts-container" id="all-blog-posts-container">
+                    <!-- Tu będą dynamicznie wczytane wpisy z bloga -->
+                    <div class="loading">Ładowanie wpisów...</div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Stopka -->
+        <footer class="pixel-border">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+                <a href="#" class="social-link" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+            <p>&copy; 2025 PixelInventor. Wszystkie prawa zastrzeżone.</p>
+            <p class="footer-note">Strona stworzona z pasją i pixelami 🎮</p>
+        </footer>
+    </div>
+</body>
+</html>

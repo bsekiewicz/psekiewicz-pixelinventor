@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYTUŁ PROJEKTU - PixelInventor</title>
+    <meta name="description" content="KRÓTKI OPIS PROJEKTU">
+    <!-- Dodaj więcej meta tagów dla SEO jeśli potrzeba -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    <!-- Dodanie pixelowego fontu -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Font Awesome dla ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Główny skrypt strony -->
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Nagłówek strony -->
+        <header>
+            <div class="pixel-border">
+                <h1 class="pixel-text">Pixel<span>Inventor</span></h1>
+                <p class="tagline">Kreatywny Świat Młodego Programisty</p>
+            </div>
+        </header>
+        
+        <!-- Menu nawigacyjne -->
+        <nav>
+            <div class="pixel-border">
+                <ul>
+                    <li><a href="../index.html" class="nav-button">Strona Główna</a></li>
+                    <li><a href="../projects.html" class="nav-button active">Projekty</a></li>
+                    <li><a href="../blog.html" class="nav-button">Blog</a></li>
+                    <li><a href="../about-me.html" class="nav-button">O Mnie</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Sekcja główna -->
+        <main>
+            <!-- Strona projektu -->
+            <article class="project-page pixel-border">
+                <header class="project-header">
+                    <h2 class="project-title">TYTUŁ PROJEKTU</h2>
+                    <div class="project-metadata">
+                        <div class="project-date">Data: DD MIESIĄC RRRR</div>
+                        <div class="project-tags">
+                            <span class="tag">TAG1</span>
+                            <span class="tag">TAG2</span>
+                            <span class="tag">TAG3</span>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="project-featured-image">
+                    <!-- Główny obraz projektu -->
+                    <img src="../img/projects/nazwa-obrazka.jpg" alt="TYTUŁ PROJEKTU">
+                </div>
+                
+                <div class="project-description">
+                    <h3>O Projekcie</h3>
+                    <p>
+                        W tym miejscu wpisz szczegółowy opis projektu. Możesz wyjaśnić, czym jest projekt,
+                        jaki problem rozwiązuje, jak działa, itp. Może to być kilka akapitów tekstu.
+                    </p>
+                    
+                    <p>
+                        To drugi akapit opisu projektu. Tutaj możesz kontynuować opis, dodać więcej
+                        szczegółów, wyjaśnić funkcjonalności, itp.
+                    </p>
+                    
+                    <h3>Technologie</h3>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-code"></i> TECHNOLOGIA 1</li>
+                        <li><i class="fas fa-code"></i> TECHNOLOGIA 2</li>
+                        <li><i class="fas fa-code"></i> TECHNOLOGIA 3</li>
+                    </ul>
+                    
+                    <h3>Proces Tworzenia</h3>
+                    <p>
+                        Tu opisz, jak powstawał projekt. Możesz napisać o wyzwaniach, które napotkałeś,
+                        jak je rozwiązałeś, co było najtrudniejsze, czego się nauczyłeś, itp.
+                    </p>
+                    
+                    <div class="project-gallery">
+                        <h3>Galeria</h3>
+                        <div class="gallery-grid">
+                            <!-- Dodatkowe obrazy projektu -->
+                            <div class="gallery-item">
+                                <img src="../img/projects/nazwa-obrazka-2.jpg" alt="Opis obrazka 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/nazwa-obrazka-3.jpg" alt="Opis obrazka 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/nazwa-obrazka-4.jpg" alt="Opis obrazka 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Jeśli projekt ma kod, możesz dodać sekcję z kodem -->
+                    <div class="code-section">
+                        <h3>Przykładowy Kod</h3>
+                        <pre><code class="language-javascript">
+// Tu wstaw przykładowy kod
+function helloWorld() {
+    console.log("Hello, World!");
+}
+
+helloWorld();
+                        </code></pre>
+                    </div>
+                    
+                    <!-- Jeśli projekt jest dostępny online lub na GitHubie -->
+                    <div class="project-links">
+                        <h3>Linki</h3>
+                        <a href="#" class="pixel-button" target="_blank">Demo Projektu</a>
+                        <a href="#" class="pixel-button" target="_blank">Kod na GitHubie</a>
+                    </div>
+                </div>
+                
+                <!-- Nawigacja między projektami -->
+                <nav class="project-navigation">
+                    <div class="prev-project">
+                        <a href="inny-projekt.html" class="nav-link">
+                            <i class="fas fa-chevron-left"></i> Poprzedni Projekt
+                        </a>
+                    </div>
+                    <div class="back-to-projects">
+                        <a href="../projects.html" class="nav-link">
+                            <i class="fas fa-th"></i> Wszystkie Projekty
+                        </a>
+                    </div>
+                    <div class="next-project">
+                        <a href="jeszcze-inny-projekt.html" class="nav-link">
+                            Następny Projekt <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </nav>
+            </article>
+        </main>
+        
+        <!-- Stopka -->
+        <footer class="pixel-border">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+                <a href="#" class="social-link" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+            <p>&copy; 2025 PixelInventor. Wszystkie prawa zastrzeżone.</p>
+            <p class="footer-note">Strona stworzona z pasją i pixelami 🎮</p>
+        </footer>
+    </div>
+</body>
+</html>
