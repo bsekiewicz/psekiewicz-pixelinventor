@@ -10,9 +10,6 @@ services:
       - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
       - "--certificatesresolvers.myresolver.acme.email=bartosz.pawel.sekiewicz@gmail.com"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
-      # Add SAN configuration
-      - "--certificatesresolvers.myresolver.acme.domains[0].main=pixelinventor.com"
-      - "--certificatesresolvers.myresolver.acme.domains[0].sans=www.pixelinventor.com"
     ports:
       - "80:80"
       - "443:443"
