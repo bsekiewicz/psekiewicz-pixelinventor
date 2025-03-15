@@ -165,76 +165,11 @@
                     <p>Ojej! Wygląda na to, że zabłądziłeś w cyfrowej przestrzeni.</p>
                     <p>Strona, której szukasz, nie istnieje lub została przeniesiona do innego wymiaru.</p>
                 </div>
-                
-                <div class="search-container">
-                    <form class="search-form" action="/search" method="get">
-                        <input type="text" name="q" placeholder="Wyszukaj na stronie..." class="search-input">
-                        <button type="submit" class="search-button">Szukaj</button>
-                    </form>
-                </div>
-                
-                <div class="suggestions">
-                    <h3>Może zainteresują Cię:</h3>
-                    <div class="suggestion-list">
-                        <div class="suggestion-item">
-                            <a href="/projects.html">Moje Projekty</a>
-                        </div>
-                        <div class="suggestion-item">
-                            <a href="/blog.html">Blog</a>
-                        </div>
-                        <div class="suggestion-item">
-                            <a href="/about-me.html">O Mnie</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="back-button">
-                    <a href="/" class="pixel-button">Powrót na stronę główną</a>
-                    <a href="javascript:history.back()" class="pixel-button">Wróć do poprzedniej strony</a>
-                </div>
             </section>
         </main>
         
         <!-- Stopka - wczytywana jako komponent -->
         <footer class="pixel-border" data-component="footer"></footer>
     </div>
-    
-    <script>
-        // Skrypt do śledzenia 404 i ulepszania strony
-        document.addEventListener('DOMContentLoaded', function() {
-            // Pobierz URL, który spowodował 404
-            const requestedUrl = window.location.pathname;
-            
-            // Możesz dodać tutaj logikę do wysyłania raportów o 404 do swojego systemu monitorowania
-            // lub do Google Analytics
-            
-            // Dynamicznie zaproponuj alternatywy na podstawie ścieżki URL
-            const suggestionsContainer = document.querySelector('.suggestion-list');
-            
-            // Prosty przykład: jeśli URL zawiera "projekt", zaproponuj inne projekty
-            if (requestedUrl.includes('project') || requestedUrl.includes('games')) {
-                suggestionsContainer.innerHTML += `
-                    <div class="suggestion-item">
-                        <a href="/projects/20250301-pixel-adventure.html">Pixel Adventure</a>
-                    </div>
-                    <div class="suggestion-item">
-                        <a href="/projects/20250220-discord-bot.html">Discord Bot</a>
-                    </div>
-                `;
-            }
-            
-            // Dla ścieżek związanych z blogiem
-            if (requestedUrl.includes('blog') || requestedUrl.includes('article')) {
-                suggestionsContainer.innerHTML += `
-                    <div class="suggestion-item">
-                        <a href="/blog/20250315-first-game.html">Moja pierwsza gra</a>
-                    </div>
-                    <div class="suggestion-item">
-                        <a href="/blog/20250228-pixel-art-tools.html">Narzędzia Pixel Art</a>
-                    </div>
-                `;
-            }
-        });
-    </script>
 </body>
 </html>
