@@ -5,37 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TYTUŁ WPISU - Blog PixelInventor</title>
     <meta name="description" content="KRÓTKI OPIS WPISU">
+    
     <!-- Dodaj więcej meta tagów dla SEO jeśli potrzeba -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/blog-post.css">
+    
     <!-- Dodanie pixelowego fontu -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome dla ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Główny skrypt strony -->
     <script src="../js/main.js" defer></script>
+    
+    <!-- Skrypt ładujący komponenty -->
+    <script src="../js/components.js" defer></script>
 </head>
 <body>
     <div class="game-container">
-        <!-- Nagłówek strony -->
-        <header>
-            <div class="pixel-border">
-                <h1 class="pixel-text">Pixel<span>Inventor</span></h1>
-                <p class="tagline">Kreatywny Świat Młodego Programisty</p>
-            </div>
-        </header>
+        <!-- Nagłówek strony - wczytywany jako komponent -->
+        <header data-component="header"></header>
         
-        <!-- Menu nawigacyjne -->
-        <nav>
-            <div class="pixel-border">
-                <ul>
-                    <li><a href="../index.html" class="nav-button">Strona Główna</a></li>
-                    <li><a href="../projects.html" class="nav-button">Projekty</a></li>
-                    <li><a href="../blog.html" class="nav-button active">Blog</a></li>
-                    <li><a href="../about-me.html" class="nav-button">O Mnie</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Menu nawigacyjne - wczytywane jako komponent -->
+        <nav data-component="navigation2"></nav>
         
         <!-- Sekcja główna -->
         <main>
@@ -118,4 +111,14 @@
                     <h3>Podsumowanie</h3>
                     <p>
                         W tym miejscu możesz podsumować swój artykuł. Przypomnij główne punkty,
-                        podkreśl wnioski i ewentualnie zasugeruj dalsze kroki
+                        podkreśl wnioski i ewentualnie zasugeruj dalsze kroki lub działania.
+                    </p>
+                </div>
+            </article>
+        </main>
+        
+        <!-- Stopka - wczytywana jako komponent -->
+        <footer class="pixel-border" data-component="footer-blog"></footer>
+    </div>
+</body>
+</html>
