@@ -18,9 +18,6 @@
     <!-- Główny skrypt strony -->
     <script src="/js/main.js" defer></script>
     
-    <!-- Skrypt ładujący komponenty -->
-    <script src="/js/components.js" defer></script>
-    
     <style>
         .error-container {
             text-align: center;
@@ -99,12 +96,6 @@
 </head>
 <body>
     <div class="game-container">
-        <!-- Nagłówek strony - wczytywany jako komponent -->
-        <header data-component="header"></header>
-        
-        <!-- Menu nawigacyjne - wczytywane jako komponent -->
-        <nav data-component="navigation"></nav>
-        
         <!-- Sekcja główna -->
         <main>
             <section class="pixel-border error-container">
@@ -125,20 +116,5 @@
         <!-- Stopka - wczytywana jako komponent -->
         <footer class="pixel-border" data-component="footer"></footer>
     </div>
-    
-    <script>
-        // Dodatkowy skrypt do śledzenia i raportowania błędów (opcjonalnie)
-        document.addEventListener('DOMContentLoaded', function() {
-            // Pobierz kod błędu z URL, jeśli jest dostępny
-            const urlParams = new URLSearchParams(window.location.search);
-            const errorCode = urlParams.get('code');
-            
-            if (errorCode) {
-                document.querySelector('.error-code').textContent = errorCode;
-            }
-            
-            // Możesz dodać tutaj logikę do wysyłania raportów o błędach do swojego systemu monitorowania
-        });
-    </script>
 </body>
 </html>
