@@ -25,23 +25,5 @@
     "date": "2025-02-10",
     "tags": ["AI", "Sztuczna Inteligencja", "Programowanie", "Nauka"],
     "url": "blog/20250210-ai-experiences.html"
-  },
-  {
-    "id": "minecraft-mods",
-    "title": "Jak zacząć tworzyć własne mody do Minecraft",
-    "excerpt": "Dzielę się moim doświadczeniem w tworzeniu pierwszych modów do Minecraft i podaję wskazówki dla początkujących.",
-    "thumbnail": "img/blog/minecraft-mods.jpg",
-    "date": "2025-01-20",
-    "tags": ["Minecraft", "Java", "Modding", "Gry"],
-    "url": "blog/20250120-minecraft-mods.html"
-  },
-  {
-    "id": "coding-mistakes",
-    "title": "Najczęstsze błędy początkujących programistów",
-    "excerpt": "Lista 5 błędów, które często popełniałem na początku mojej przygody z programowaniem, i jak ich unikać.",
-    "thumbnail": "img/blog/coding-mistakes.jpg",
-    "date": "2025-01-05",
-    "tags": ["Programowanie", "Porady", "JavaScript", "Python"],
-    "url": "blog/20250105-coding-mistakes.html"
   }
 ]

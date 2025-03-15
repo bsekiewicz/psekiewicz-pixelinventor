@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Adventure - Gra Platformowa | PixelInventor</title>
+    <meta name="description" content="Pixel Adventure - prosta gra platformowa stworzona w JavaScript. Przemierzaj kolorowe poziomy, zbieraj monety i unikaj pułapek w tej retro-stylistycznej grze.">
+    
+    <!-- Meta tagi dla SEO -->
+    <meta name="keywords" content="Pixel Adventure, gra platformowa, javascript, HTML5, CSS, gra 2D, pixel art">
+    <meta name="author" content="PixelInventor">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pixelinventor.com/projects/20250301-pixel-adventure.html">
+    <meta property="og:title" content="Pixel Adventure - Gra Platformowa | PixelInventor">
+    <meta property="og:description" content="Pixel Adventure - prosta gra platformowa stworzona w JavaScript. Przemierzaj kolorowe poziomy, zbieraj monety i unikaj pułapek w tej retro-stylistycznej grze.">
+    <meta property="og:image" content="https://pixelinventor.com/img/projects/pixel-adventure-og.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pixelinventor.com/projects/20250301-pixel-adventure.html">
+    <meta name="twitter:title" content="Pixel Adventure - Gra Platformowa | PixelInventor">
+    <meta name="twitter:description" content="Pixel Adventure - prosta gra platformowa stworzona w JavaScript. Przemierzaj kolorowe poziomy, zbieraj monety i unikaj pułapek w tej retro-stylistycznej grze.">
+    <meta name="twitter:image" content="https://pixelinventor.com/img/projects/pixel-adventure-twitter.jpg">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://pixelinventor.com/projects/20250301-pixel-adventure.html">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    
+    <!-- Dodanie pixelowego fontu -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome dla ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Highlight.js dla wyróżniania składni kodu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- Główny skrypt strony -->
+    <script src="../js/main.js" defer></script>
+    
+    <!-- Skrypt ładujący komponenty -->
+    <script src="../js/components.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Nagłówek strony - wczytywany jako komponent -->
+        <header data-component="header-blog"></header>
+        
+        <!-- Menu nawigacyjne - wczytywane jako komponent -->
+        <nav data-component="navigation-blog"></nav>
+        
+        <!-- Sekcja główna -->
+        <main>
+            <!-- Strona projektu -->
+            <article class="project-page pixel-border">
+                <header class="project-header">
+                    <h2 class="project-title">Pixel Adventure</h2>
+                    <div class="project-metadata">
+                        <div class="project-date">Data: 1 marca 2025</div>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Canvas</span>
+                            <span class="tag">Gra</span>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="project-featured-image">
+                    <!-- Główny obraz projektu -->
+                    <img src="../img/projects/pixel-adventure.jpg" alt="Screenshot z gry Pixel Adventure">
+                </div>
+                
+                <div class="project-description">
+                    <div class="project-buttons">
+                        <a href="#play-game" class="pixel-button">Zagraj teraz!</a>
+                        <a href="https://github.com/pixelinventor/pixel-adventure" class="pixel-button" target="_blank">Zobacz kod na GitHub</a>
+                    </div>
+                    
+                    <h3>O Projekcie</h3>
+                    <p>
+                        <strong>Pixel Adventure</strong> to prosta gra platformowa stworzona w JavaScript, wykorzystująca HTML5 Canvas 
+                        do renderowania grafiki. Inspirowana klasykami gatunku jak Super Mario Bros czy Sonic the Hedgehog, 
+                        oferuje nostalgiczną rozgrywkę w stylu retro z nowoczesnym twistem.
+                    </p>
+                    
+                    <p>
+                        W grze sterujemy bohaterem o imieniu Pixie, który musi przemierzyć różnorodne poziomy pełne platform, 
+                        przeszkód i wrogów. Celem jest zebranie wszystkich klejnotów na każdym poziomie i dotarcie do portalu, 
+                        który przenosi do następnego etapu.
+                    </p>
+                    
+                    <div id="play-game" class="game-embed">
+                        <iframe src="https://pixelinventor.com/games/pixel-adventure/index.html" width="800" height="500" allowfullscreen></iframe>
+                        <p class="game-instructions">
+                            <strong>Sterowanie:</strong> Strzałki do poruszania się, Spacja do skoku, P aby wstrzymać grę
+                        </p>
+                    </div>
+                    
+                    <h3>Technologie</h3>
+                    <ul class="tech-list">
+                        <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fab fa-html5"></i> HTML5 Canvas</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fas fa-volume-up"></i> Web Audio API</li>
+                        <li><i class="fas fa-code-branch"></i> LocalStorage (zapis stanu gry)</li>
+                    </ul>
+                    
+                    <h3>Funkcje gry</h3>
+                    <ul>
+                        <li><strong>5 unikalnych poziomów</strong> o rosnącym poziomie trudności</li>
+                        <li><strong>Różnorodne elementy otoczenia</strong> - platformy ruchome, znikające, odbijające itp.</li>
+                        <li><strong>3 rodzaje przeciwników</strong> z unikalnymi wzorcami ruchu</li>
+                        <li><strong>System punktów i osiągnięć</strong> dodający replay value</li>
+                        <li><strong>Pikselowa grafika</strong> wykonana przeze mnie w Aseprite</li>
+                        <li><strong>Chiptune'owa muzyka</strong> skomponowana w FamiTracker</li>
+                        <li><strong>Responsywność</strong> - gra dostosowuje się do różnych rozmiarów ekranu</li>
+                        <li><strong>Zapisywanie postępu</strong> w LocalStorage przeglądarki</li>
+                    </ul>
+                    
+                    <h3>Proces Tworzenia</h3>
+                    <p>
+                        Projekt <strong>Pixel Adventure</strong> powstał jako rozwinięcie mojej pierwszej prostej gry, którą stworzyłem 
+                        w Scratch kilka lat temu. Chciałem sprawdzić, czy jestem w stanie przenieść podobną koncepcję na 
+                        "prawdziwy" język programowania i dodać więcej funkcjonalności.
+                    </p>
+                    
+                    <p>
+                        Projekt rozpocząłem od zaprojektowania bohatera i podstawowych elementów otoczenia w Aseprite.
+                        Następnie zaimplementowałem podstawową mechanikę poruszania się i kolizji. Gdy te działały poprawnie,
+                        dodawałem kolejne elementy: wrogów, zbieralne przedmioty, różne typy platform.
+                    </p>
+                    
+                    <h4>Największe wyzwania</h4>
+                    <p>
+                        Największym wyzwaniem było zaimplementowanie poprawnego systemu kolizji, który działałby ze wszystkimi 
+                        elementami otoczenia. Szczególnie trudne było zapewnienie, aby postać "stała" na platformach, a nie 
+                        przenikała przez nie lub odbijała się w niekontrolowany sposób.
+                    </p>
+                    
+                    <p>
+                        Drugim wyzwaniem było zoptymalizowanie renderowania gry tak, aby działała płynnie nawet na słabszych 
+                        urządzeniach. Zastosowałem technikę renderowania warstwowego i ograniczenie odświeżania do elementów 
+                        widocznych na ekranie.
+                    </p>
+                    
+                    <div class="project-gallery">
+                        <h3>Galeria</h3>
+                        <div class="gallery-grid">
+                            <!-- Dodatkowe obrazy projektu -->
+                            <div class="gallery-item">
+                                <img src="../img/projects/pixel-adventure-level1.jpg" alt="Poziom 1 - Las">
+                                <p>Poziom 1 - Las</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/pixel-adventure-level2.jpg" alt="Poziom 2 - Jaskinie">
+                                <p>Poziom 2 - Jaskinie</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/pixel-adventure-level3.jpg" alt="Poziom 3 - Lodowa Kraina">
+                                <p>Poziom 3 - Lodowa Kraina</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/pixel-adventure-character.jpg" alt="Projekt postaci gracza">
+                                <p>Projekt postaci gracza</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/pixel-adventure-enemies.jpg" alt="Projekty przeciwników">
+                                <p>Projekty przeciwników</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../img/projects/pixel-adventure-items.jpg" alt="Projekty przedmiotów">
+                                <p>Projekty przedmiotów</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Fragmenty kodu</h3>
+                    <p>
+                        Poniżej prezentuję kilka fragmentów kodu, które pokazują najciekawsze aspekty implementacji gry:
+                    </p>
+                    
+                    <h4>System kolizji</h4>
+                    <pre><code class="language-javascript">
+// Klasa odpowiedzialna za wykrywanie kolizji
+class CollisionDetector {
+    constructor(game) {
+        this.game = game;
+    }
+    
+    // Sprawdza kolizje postaci z platformami
+    checkPlatformCollisions(character, platforms) {
+        const characterRect = {
+            x: character.x,
+            y: character.y,
+            width: character.width,
+            height: character.height
+        };
+        
+        let onGround = false;
+        let hitCeiling = false;
+        let hitWall = false;
+        
+        platforms.forEach(platform => {
+            // Pomijamy platformy poza ekranem
+            if (!this.isInView(platform)) return;
+            
+            const platformRect = {
+                x: platform.x,
+                y: platform.y,
+                width: platform.width,
+                height: platform.height
+            };
+            
+            if (this.checkRectCollision(characterRect, platformRect)) {
+                // Określamy kierunek kolizji na podstawie pozycji
+                const overlapX = Math.min(
+                    character.x + character.width - platform.x,
+                    platform.x + platform.width - character.x
+                );
+                
+                const overlapY = Math.min(
+                    character.y + character.height - platform.y,
+                    platform.y + platform.height - character.y
+                );
+                
+                // Kolizja nastąpiła w osi z mniejszym nakładaniem się
+                if (overlapX < overlapY) {
+                    // Kolizja pozioma (ściana)
+                    if (character.x < platform.x) {
+                        character.x = platform.x - character.width;
+                    } else {
+                        character.x = platform.x + platform.width;
+                    }
+                    character.velocityX = 0;
+                    hitWall = true;
+                } else {
+                    // Kolizja pionowa (podłoga lub sufit)
+                    if (character.y < platform.y) {
+                        character.y = platform.y - character.height;
+                        character.velocityY = 0;
+                        onGround = true;
+                    } else {
+                        character.y = platform.y + platform.height;
+                        character.velocityY = 0;
+                        hitCeiling = true;
+                    }
+                }
+                
+                // Specjalne zachowanie dla różnych typów platform
+                if (platform.type === 'bounce' && onGround) {
+                    character.velocityY = -character.jumpForce * 1.5;
+                    this.game.audio.playSound('bounce');
+                } else if (platform.type === 'moving') {
+                    // Postać porusza się wraz z platformą
+                    character.x += platform.velocityX;
+                }
+            }
+        });
+        
+        return { onGround, hitCeiling, hitWall };
+    }
+    
+    // Sprawdza kolizję dwóch prostokątów
+    checkRectCollision(rect1, rect2) {
+        return (
+            rect1.x < rect2.x + rect2.width &&
+            rect1.x + rect1.width > rect2.x &&
+            rect1.y < rect2.y + rect2.height &&
+            rect1.y + rect1.height > rect2.y
+        );
+    }
+    
+    // Sprawdza, czy obiekt jest widoczny na ekranie
+    isInView(object) {
+        return (
+            object.x + object.width > this.game.camera.x &&
+            object.x < this.game.camera.x + this.game.width &&
+            object.y + object.height > this.game.camera.y &&
+            object.y < this.game.camera.y + this.game.height
+        );
+    }
+}
+</code></pre>
+                    
+                    <h4>System animacji postaci</h4>
+                    <pre><code class="language-javascript">
+// Klasa zarządzająca animacjami postaci
+class CharacterAnimator {
+    constructor(character) {
+        this.character = character;
+        this.animations = {
+            idle: {
+                frames: 4,
+                frameSpeed: 10,
+                spriteSheet: document.getElementById('idle-spritesheet')
+            },
+            run: {
+                frames: 6,
+                frameSpeed: 8,
+                spriteSheet: document.getElementById('run-spritesheet')
+            },
+            jump: {
+                frames: 2,
+                frameSpeed: 6,
+                spriteSheet: document.getElementById('jump-spritesheet')
+            },
+            fall: {
+                frames: 2,
+                frameSpeed: 6,
+                spriteSheet: document.getElementById('fall-spritesheet')
+            }
+        };
+        
+        this.currentAnimation = 'idle';
+        this.frameIndex = 0;
+        this.frameCounter = 0;
+        this.frameWidth = 32;
+        this.frameHeight = 32;
+        this.facingRight = true;
+    }
+    
+    // Aktualizuje stan animacji
+    update() {
+        // Określenie odpowiedniej animacji na podstawie stanu postaci
+        let newAnimation = 'idle';
+        
+        if (!this.character.onGround) {
+            newAnimation = this.character.velocityY < 0 ? 'jump' : 'fall';
+        } else if (Math.abs(this.character.velocityX) > 0.1) {
+            newAnimation = 'run';
+        }
+        
+        // Zmiana kierunku postaci
+        if (this.character.velocityX > 0) {
+            this.facingRight = true;
+        } else if (this.character.velocityX < 0) {
+            this.facingRight = false;
+        }
+        
+        // Resetuj licznik klatek przy zmianie animacji
+        if (this.currentAnimation !== newAnimation) {
+            this.frameIndex = 0;
+            this.frameCounter = 0;
+            this.currentAnimation = newAnimation;
+        }
+        
+        // Aktualizacja klatki animacji
+        this.frameCounter++;
+        const { frameSpeed } = this.animations[this.currentAnimation];
+        
+        if (this.frameCounter >= frameSpeed) {
+            this.frameCounter = 0;
+            this.frameIndex = (this.frameIndex + 1) % this.animations[this.currentAnimation].frames;
+        }
+    }
+    
+    // Rysuje aktualną klatkę animacji
+    draw(ctx) {
+        const animation = this.animations[this.currentAnimation];
+        const spriteSheet = animation.spriteSheet;
+        
+        ctx.save();
+        
+        if (!this.facingRight) {
+            // Odbij poziomo dla postaci skierowanej w lewo
+            ctx.translate(this.character.x + this.character.width, this.character.y);
+            ctx.scale(-1, 1);
+            ctx.drawImage(
+                spriteSheet,
+                this.frameIndex * this.frameWidth, 0,
+                this.frameWidth, this.frameHeight,
+                0, 0,
+                this.character.width, this.character.height
+            );
+        } else {
+            ctx.drawImage(
+                spriteSheet,
+                this.frameIndex * this.frameWidth, 0,
+                this.frameWidth, this.frameHeight,
+                this.character.x, this.character.y,
+                this.character.width, this.character.height
+            );
+        }
+        
+        ctx.restore();
+    }
+}
+</code></pre>
+                    
+                    <h4>System dźwięku</h4>
+                    <pre><code class="language-javascript">
+// Klasa zarządzająca dźwiękami i muzyką
+class AudioManager {
+    constructor() {
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        this.sounds = {};
+        this.music = {};
+        this.musicVolume = 0.5;
+        this.soundVolume = 0.8;
+        this.currentMusic = null;
+        
+        // Załaduj dźwięki
+        this.loadSounds();
+    }
+    
+    // Ładuje wszystkie dźwięki i muzykę
+    async loadSounds() {
+        const soundFiles = {
+            jump: 'sounds/jump.wav',
+            coin: 'sounds/coin.wav',
+            hurt: 'sounds/hurt.wav',
+            powerup: 'sounds/powerup.wav',
+            bounce: 'sounds/bounce.wav',
+            victory: 'sounds/victory.wav',
+            gameOver: 'sounds/game-over.wav'
+        };
+        
+        const musicFiles = {
+            theme1: 'music/theme1.mp3',
+            theme2: 'music/theme2.mp3',
+            theme3: 'music/theme3.mp3',
+            boss: 'music/boss.mp3',
+            menu: 'music/menu.mp3'
+        };
+        
+        // Ładuje dźwięki
+        for (const [name, path] of Object.entries(soundFiles)) {
+            try {
+                const response = await fetch(path);
+                const arrayBuffer = await response.arrayBuffer();
+                const audioBuffer = await this.audioContext.decodeAudioData(arrayBuffer);
+                this.sounds[name] = audioBuffer;
+            } catch (error) {
+                console.error(`Nie udało się załadować dźwięku: ${path}`, error);
+            }
+        }
+        
+        // Ładuje muzykę
+        for (const [name, path] of Object.entries(musicFiles)) {
+            try {
+                const response = await fetch(path);
+                const arrayBuffer = await response.arrayBuffer();
+                const audioBuffer = await this.audioContext.decodeAudioData(arrayBuffer);
+                this.music[name] = audioBuffer;
+            } catch (error) {
+                console.error(`Nie udało się załadować muzyki: ${path}`, error);
+            }
+        }
+    }
+    
+    // Odtwarza dźwięk
+    playSound(name) {
+        if (!this.sounds[name]) return;
+        
+        const source = this.audioContext.createBufferSource();
+        source.buffer = this.sounds[name];
+        
+        const gainNode = this.audioContext.createGain();
+        gainNode.gain.value = this.soundVolume;
+        
+        source.connect(gainNode);
+        gainNode.connect(this.audioContext.destination);
+        
+        source.start();
+    }
+    
+    // Odtwarza muzykę w pętli
+    playMusic(name) {
+        // Zatrzymaj aktualną muzykę
+        if (this.currentMusic) {
+            this.currentMusic.stop();
+            this.currentMusic = null;
+        }
+        
+        if (!this.music[name]) return;
+        
+        const source = this.audioContext.createBufferSource();
+        source.buffer = this.music[name];
+        source.loop = true;
+        
+        const gainNode = this.audioContext.createGain();
+        gainNode.gain.value = this.musicVolume;
+        
+        source.connect(gainNode);
+        gainNode.connect(this.audioContext.destination);
+        
+        source.start();
+        this.currentMusic = source;
+    }
+    
+    // Zatrzymuje muzykę
+    stopMusic() {
+        if (this.currentMusic) {
+            this.currentMusic.stop();
+            this.currentMusic = null;
+        }
+    }
+    
+    // Ustawia głośność muzyki
+    setMusicVolume(volume) {
+        this.musicVolume = Math.max(0, Math.min(1, volume));
+        // Aktualizacja głośności aktualnie odtwarzanej muzyki
+        // ...
+    }
+    
+    // Ustawia głośność dźwięków
+    setSoundVolume(volume) {
+        this.soundVolume = Math.max(0, Math.min(1, volume));
+    }
+}
+</code></pre>
+                    
+                    <h3>Wnioski i plany na przyszłość</h3>
+                    <p>
+                        Stworzenie <strong>Pixel Adventure</strong> było dla mnie cennym doświadczeniem. Nauczyłem się wielu aspektów 
+                        tworzenia gier, od projektowania poziomów po implementację fizyki i systemów kolizji. Najbardziej 
+                        satysfakcjonujące było połączenie moich umiejętności programistycznych z kreatywną stroną projektu - 
+                        tworzeniem grafiki i projektowaniem poziomów.
+                    </p>
+                    
+                    <p>
+                        W przyszłości planuję rozszerzyć grę o:
+                    </p>
+                    
+                    <ul>
+                        <li>Więcej poziomów z nowymi mechanikami</li>
+                        <li>System ekwipunku i zbieralnych mocy</li>
+                        <li>Tryb edytora poziomów, w którym gracze mogą tworzyć własne poziomy</li>
+                        <li>Tryb wieloosobowy przez WebSockets</li>
+                        <li>Port na urządzenia mobilne z kontrolami dotykowymi</li>
+                    </ul>
+                    
+                    <p>
+                        Ten projekt pokazał mi, że tworzenie gier to dziedzina, którą chcę dalej eksplorować i rozwijać swoje 
+                        umiejętności w tym kierunku.
+                    </p>
+                </div>
+                
+                <!-- Nawigacja między projektami -->
+                <nav class="project-navigation">
+                    <div class="prev-project">
+                        <a href="20250220-discord-bot.html" class="nav-link">
+                            <i class="fas fa-chevron-left"></i> Poprzedni Projekt
+                        </a>
+                    </div>
+                    <div class="back-to-projects">
+                        <a href="../projects.html" class="nav-link">
+                            <i class="fas fa-th"></i> Wszystkie Projekty
+                        </a>
+                    </div>
+                    <div class="next-project">
+                        <a href="#" class="nav-link disabled">
+                            Następny Projekt <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </nav>
+            </article>
+        </main>
+        
+        <!-- Stopka - wczytywana jako komponent -->
+        <footer class="pixel-border" data-component="footer-blog"></footer>
+    </div>
+</body>
+</html>

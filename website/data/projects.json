@@ -5,7 +5,7 @@
     "description": "Prosta gra platformowa stworzona w JavaScript",
     "thumbnail": "img/projects/pixel-adventure.jpg",
     "date": "2025-03-01",
-    "tags": ["JavaScript", "HTML5", "CSS"],
+    "tags": ["JavaScript", "HTML5", "CSS", "Canvas", "Gra"],
     "category": "games",
     "url": "projects/20250301-pixel-adventure.html"
   },
@@ -15,7 +15,7 @@
     "description": "Bot do Discorda napisany w Python",
     "thumbnail": "img/projects/discord-bot.jpg",
     "date": "2025-02-20",
-    "tags": ["Python", "API"],
+    "tags": ["Python", "API", "Discord"],
     "category": "code",
     "url": "projects/20250220-discord-bot.html"
   },
@@ -25,7 +25,7 @@
     "description": "Kolekcja postaci w stylu pixel art",
     "thumbnail": "img/projects/pixel-characters.jpg",
     "date": "2025-01-15",
-    "tags": ["Pixel Art", "Aseprite"],
+    "tags": ["Pixel Art", "Aseprite", "Grafika"],
     "category": "art",
     "url": "projects/20250115-pixel-characters.html"
   },
@@ -35,28 +35,8 @@
     "description": "Muzyka chiptune do gier",
     "thumbnail": "img/projects/8bit-music.jpg",
     "date": "2025-01-05",
-    "tags": ["Chiptune", "8-bit"],
+    "tags": ["Chiptune", "8-bit", "Muzyka"],
     "category": "music",
     "url": "projects/20250105-8bit-music.html"
-  },
-  {
-    "id": "ai-quiz-generator",
-    "title": "AI Quiz Generator",
-    "description": "Generator quizów wykorzystujący AI",
-    "thumbnail": "img/projects/ai-quiz.jpg",
-    "date": "2024-12-10",
-    "tags": ["Python", "AI", "HTML"],
-    "category": "code",
-    "url": "projects/20241210-ai-quiz-generator.html"
-  },
-  {
-    "id": "space-shooter",
-    "title": "Space Shooter",
-    "description": "Gra zręcznościowa w stylu retro",
-    "thumbnail": "img/projects/space-shooter.jpg",
-    "date": "2024-11-20",
-    "tags": ["JavaScript", "Canvas"],
-    "category": "games",
-    "url": "projects/20241120-space-shooter.html"
   }
 ]
