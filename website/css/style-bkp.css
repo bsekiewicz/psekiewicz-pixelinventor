@@ -380,11 +380,6 @@ nav li {
     font-size: 11px;
 }
 
-/* Poprawka dla przycisków "Zobacz więcej" w kartach projektu */
-.project-info a.pixel-button {
-    float: right;
-}
-
 /* ========== BLOG ========== */
 .blog-posts {
     display: grid;
@@ -449,20 +444,6 @@ nav li {
     margin-bottom: 15px;
 }
 
-/* Poprawka dla przycisków "Czytaj więcej" w kartach blogu */
-.blog-content a.pixel-button {
-    float: right;
-}
-
-/* Poprawka dla wstępu na blogu */
-.blog-intro {
-    margin-bottom: 30px;
-    background-color: rgba(124, 77, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid var(--pixel-purple);
-}
-
 /* ========== O MNIE ========== */
 .about-quick {
     display: flex;
@@ -475,7 +456,7 @@ nav li {
     min-width: 250px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pixel-character {
@@ -562,15 +543,9 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Poprawka dla stopki - zamieniamy miejscami i zmieniamy rozmiary */
-footer p {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-footer p.footer-note {
-    font-size: 14px;
+.footer-note {
     color: var(--pixel-blue);
+    font-size: 12px;
     margin-top: 10px;
 }
 
@@ -580,30 +555,130 @@ footer p.footer-note {
     margin-top: 20px;
 }
 
-/* ========== KATEGORIE PROJEKTÓW ========== */
-/* Poprawka dla zakładek na stronie projekty */
-.category-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
+/* ========== RESPONSYWNOŚĆ ========== */
+@media (max-width: 768px) {
+    /* Ogólne dostosowania dla urządzeń mobilnych */
+    .game-container {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .pixel-border {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    /* Nagłówek i nawigacja */
+    .pixel-text {
+        font-size: 1.5rem;
+    }
+    
+    header .tagline {
+        font-size: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Sekcja hero */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .hero-content h2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+    }
+    
+    /* Projekty i blog */
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .projects-grid, .blog-posts {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .project-card, .blog-card {
+        margin-bottom: 15px;
+    }
+    
+    .project-info h3, .blog-content h3 {
+        font-size: 12px;
+    }
+    
+    .project-info p, .blog-content p {
+        font-size: 13px;
+    }
+    
+    .project-tags {
+        justify-content: center;
+    }
+    
+    /* Przyciski */
+    .pixel-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .pixel-button.small {
+        padding: 6px 12px;
+        font-size: 9px;
+    }
+    
+    /* Stopka */
+    footer {
+        padding: 15px 0;
+    }
+    
+    .social-links a {
+        width: 35px;
+        height: 35px;
+    }
 }
 
-.tab-button {
-    font-family: 'Press Start 2P', cursive;
-    padding: 8px 16px;
-    margin: 0 5px 10px;
-    background-color: rgba(255, 255, 255, 0.05);
-    color: var(--text-color);
-    border: 2px solid var(--pixel-border-color);
-    cursor: pointer;
-    font-size: 12px;
-    transition: all 0.2s;
-}
-
-.tab-button:hover, .tab-button.active {
-    background-color: var(--pixel-purple);
-    color: white;
+/* Dodatkowe usprawnienia dla bardzo małych ekranów */
+@media (max-width: 480px) {
+    .pixel-text {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+    }
+    
+    .project-image, .blog-image {
+        height: 140px;
+    }
+    
+    .pixel-avatar, .pixel-character {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* ========== STRONA O MNIE ========== */
@@ -628,7 +703,7 @@ footer p.footer-note {
 .about-content h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
-    margin: 40px 0 20px; /* Zwiększony margines */
+    margin: 30px 0 15px;
     color: var(--pixel-purple-light);
 }
 
@@ -734,179 +809,32 @@ footer p.footer-note {
     color: var(--pixel-blue);
 }
 
-/* ========== STRONA PROJEKTU I BLOGA ========== */
-/* Dodatkowe style dla podstron projektów i bloga */
-.project-navigation, .post-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 2px solid rgba(124, 77, 255, 0.3);
-}
-
-.nav-link {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
-    color: var(--pixel-blue);
-    text-decoration: none;
-    padding: 8px 12px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-    transition: all 0.2s;
-    display: inline-flex;
-    align-items: center;
-}
-
-.nav-link i {
-    margin: 0 8px;
-}
-
-.nav-link:hover {
-    background-color: var(--pixel-purple);
-    color: white;
-}
-
-.nav-link.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
-/* ========== RESPONSYWNOŚĆ ========== */
+/* Responsywność dla strony O Mnie */
 @media (max-width: 768px) {
-    /* Ogólne dostosowania dla urządzeń mobilnych */
-    .game-container {
-        margin: 10px;
-        padding: 10px;
-    }
-    
-    .pixel-border {
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-    
-    /* Nagłówek i nawigacja */
-    .pixel-text {
-        font-size: 1.5rem;
-    }
-    
-    header .tagline {
-        font-size: 10px;
-    }
-    
-    nav ul {
+    .about-container {
         flex-direction: column;
         align-items: center;
     }
     
-    nav li {
-        margin: 5px 0;
-        width: 100%;
-        text-align: center;
+    .about-image {
+        margin-bottom: 0;
     }
     
-    .nav-button {
-        display: block;
-        width: 100%;
-        padding: 10px;
+    .timeline-item {
+        padding-left: 40px;
     }
     
-    /* Sekcja hero */
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
+    .timeline-date {
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
     }
     
-    .hero-content h2 {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    
-    .hero-content p {
-        font-size: 14px;
-    }
-    
-    /* Projekty i blog */
-    .section-title {
-        font-size: 18px;
-    }
-    
-    .projects-grid, .blog-posts {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .project-card, .blog-card {
-        margin-bottom: 15px;
-    }
-    
-    .project-info h3, .blog-content h3 {
+    .timeline-content h4 {
         font-size: 12px;
     }
     
-    .project-info p, .blog-content p {
-        font-size: 13px;
-    }
-    
-    .project-tags {
-        justify-content: center;
-    }
-    
-    /* Przyciski */
-    .pixel-button {
-        padding: 10px 20px;
+    .skill-category h4 {
         font-size: 12px;
-    }
-    
-    .pixel-button.small {
-        padding: 6px 12px;
-        font-size: 9px;
-    }
-    
-    /* Stopka */
-    footer {
-        padding: 15px 0;
-    }
-    
-    .social-links a {
-        width: 35px;
-        height: 35px;
-    }
-    
-    /* Nawigacja projektu i blogu */
-    .project-navigation, .post-navigation {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .nav-link {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-/* Dodatkowe usprawnienia dla bardzo małych ekranów */
-@media (max-width: 480px) {
-    .pixel-text {
-        font-size: 1.2rem;
-    }
-    
-    .hero-content h2 {
-        font-size: 16px;
-    }
-    
-    .section-title {
-        font-size: 16px;
-    }
-    
-    .project-image, .blog-image {
-        height: 140px;
-    }
-    
-    .pixel-avatar, .pixel-character {
-        width: 150px;
-        height: 150px;
     }
 }
