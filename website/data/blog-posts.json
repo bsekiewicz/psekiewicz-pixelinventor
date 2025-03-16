@@ -1,29 +1,11 @@
 [
   {
-    "id": "first-game",
-    "title": "Jak zacząłem przygodę z programowaniem",
-    "excerpt": "W tym wpisie opowiadam o tym, jak w wieku 10 lat stworzyłem swoją pierwszą grę w Scratch i jak to wpłynęło na moją pasję do kodowania.",
-    "thumbnail": "img/blog/first-game.jpg",
-    "date": "2025-03-15",
-    "tags": ["Programowanie", "Scratch", "Gry", "Nauka"],
-    "url": "blog/20250315-first-game.html"
-  },
-  {
-    "id": "pixel-art-tools",
-    "title": "5 narzędzi do tworzenia pixel artu, które polecam",
-    "excerpt": "Przegląd moich ulubionych narzędzi do tworzenia grafiki pikselowej oraz kilka wskazówek dla początkujących.",
-    "thumbnail": "img/blog/pixel-art-tools.jpg",
-    "date": "2025-02-28",
-    "tags": ["Pixel Art", "Narzędzia", "Grafika", "Gry"],
-    "url": "blog/20250228-pixel-art-tools.html"
-  },
-  {
     "id": "ai-experiences",
     "title": "Moje pierwsze doświadczenia z AI",
-    "excerpt": "Jak wykorzystuję sztuczną inteligencję w swoich projektach i czego się nauczyłem eksperymentując z różnymi narzędziami AI.",
+    "excerpt": "Jak wykorzystuję sztuczną inteligencję w swoich projektach?",
     "thumbnail": "img/blog/ai-experiences.jpg",
-    "date": "2025-02-10",
+    "date": "2025-03-10",
     "tags": ["AI", "Sztuczna Inteligencja", "Programowanie", "Nauka"],
-    "url": "blog/20250210-ai-experiences.html"
+    "url": "blog/2025-03-10-ai-experiences.html"
   }
 ]

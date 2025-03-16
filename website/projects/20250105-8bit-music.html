@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Adventure - Gra Platformowa | PixelInventor</title>
+    <meta name="description" content="Pixel Adventure - prosta gra platformowa stworzona w JavaScript. Przemierzaj kolorowe poziomy, zbieraj monety i unikaj pułapek w tej retro-stylistycznej grze.">
+    
+    <!-- Meta tagi dla SEO -->
+    <meta name="keywords" content="Pixel Adventure, gra platformowa, javascript, HTML5, CSS, gra 2D, pixel art">
+    <meta name="author" content="PixelInventor">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pixelinventor.com/projects/20250301-pixel-adventure.html">
+    <meta property="og:title" content="Pixel Adventure - Gra Platformowa | PixelInventor">
+    <meta property="og:description" content="Pixel Adventure - prosta gra platformowa stworzona w JavaScript. Przemierzaj kolorowe poziomy, zbieraj monety i unikaj pułapek w tej retro-stylistycznej grze.">
+    <meta property="og:image" content="https://pixelinventor.com/img/projects/pixel-adventure-og.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pixelinventor.com/projects/20250301-pixel-adventure.html">
+    <meta name="twitter:title" content="Pixel Adventure - Gra Platformowa | PixelInventor">
+    <meta name="twitter:description" content="Pixel Adventure - prosta gra platformowa stworzona w JavaScript. Przemierzaj kolorowe poziomy, zbieraj monety i unikaj pułapek w tej retro-stylistycznej grze.">
+    <meta name="twitter:image" content="https://pixelinventor.com/img/projects/pixel-adventure-twitter.jpg">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://pixelinventor.com/projects/20250301-pixel-adventure.html">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    
+    <!-- Dodanie pixelowego fontu -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome dla ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Highlight.js dla wyróżniania składni kodu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- Główny skrypt strony -->
+    <script src="../js/main.js" defer></script>
+    
+    <!-- Skrypt ładujący komponenty -->
+    <script src="../js/components.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Nagłówek strony - wczytywany jako komponent -->
+        <header data-component="header"></header>
+        
+        <!-- Menu nawigacyjne - wczytywane jako komponent -->
+        <nav data-component="navigation2"></nav>
+        
+        <!-- Sekcja główna -->
+        <main>
+            <!-- Strona projektu -->
+            <article class="project-page pixel-border">
+                <!-- Nawigacja między projektami -->
+                <nav class="project-navigation">
+                    <div class="prev-project">
+                        <a href="20250220-discord-bot.html" class="nav-link">
+                            <i class="fas fa-chevron-left"></i> Poprzedni Projekt
+                        </a>
+                    </div>
+                    <div class="back-to-projects">
+                        <a href="../projects.html" class="nav-link">
+                            <i class="fas fa-th"></i> Wszystkie Projekty
+                        </a>
+                    </div>
+                    <div class="next-project">
+                        <a href="#" class="nav-link disabled">
+                            Następny Projekt <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </nav>
+            </article>
+        </main>
+        
+        <!-- Stopka - wczytywana jako komponent -->
+        <footer class="pixel-border" data-component="footer"></footer>
+    </div>
+</body>
+</html>
