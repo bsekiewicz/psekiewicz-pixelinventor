@@ -1,12 +1,12 @@
 [
   {
-    "id": "8bit-music",
-    "title": "8-bit Melodie",
+    "id": "ai-music",
+    "title": "Melodie AI",
     "description": "Muzyka do gier",
-    "thumbnail": "img/projects/8bit-music.jpg",
+    "thumbnail": "img/projects/ai-music.jpg",
     "date": "2025-01-05",
-    "tags": ["Chiptune", "8-bit", "Muzyka"],
+    "tags": ["Chiptune", "Suno", "Muzyka"],
     "category": "music",
-    "url": "projects/20250105-8bit-music.html"
+    "url": "projects/20250105-ai-music.html"
   }
 ]
