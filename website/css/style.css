@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding: 20px;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -13,7 +14,13 @@ header.pixel-border {
     margin-bottom: 20px;
     text-align: center;
     padding: 30px 20px;
-    width: 100%;
+    box-sizing: border-box;
+}
+
+header.pixel-border > * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pixel-text {
@@ -23,6 +30,7 @@ header.pixel-border {
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 .pixel-text span {
@@ -38,7 +46,7 @@ header.pixel-border {
 /* Navigation Styles */
 nav.pixel-border {
     margin-bottom: 30px;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -78,20 +86,20 @@ footer.pixel-border {
     margin-top: 30px;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-links {
     display: flex;
     gap: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .social-link {
@@ -116,6 +124,12 @@ footer.pixel-border {
 .footer-note {
     font-size: 14px;
     color: var(--pixel-purple-light);
+}
+
+footer.pixel-border p:last-child {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-top: 5px;
 }
 
 /* Hero Section */
@@ -492,16 +506,18 @@ main {
 }
 
 main > section.pixel-border,
-main > article.pixel-border {
+main > article.pixel-border,
+.blog-post.pixel-border,
+.project-page.pixel-border {
     width: 100%;
     box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-/* Blog post and project page container sizing */
+/* Fix for blog post and project page container sizing */
 .blog-post,
 .project-page {
-    max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
 }
 
@@ -524,11 +540,12 @@ main > article.pixel-border {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 5px; /* Reduced gap between mobile menu items */
     }
     
     nav li {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px; /* Reduced space between nav items */
     }
     
     .nav-button {
