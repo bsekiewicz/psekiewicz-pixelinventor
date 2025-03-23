@@ -21,10 +21,21 @@ async function loadComponents() {
         const componentName = element.getAttribute('data-component');
         try {
             // Pobierz zawartość komponentu
-            const response = await fetch(`/components/${componentName}.html`);
+            // FIX: Zmiana ścieżki z bezwzględnej na względną
+            let response;
             
-            if (!response.ok) {
-                throw new Error(`Failed to load component ${componentName}`);
+            // Najpierw próbujemy względną ścieżkę (dla strony głównej)
+            try {
+                response = await fetch(`components/${componentName}.html`);
+                if (!response.ok) {
+                    throw new Error('Components not found in root path');
+                }
+            } catch (e) {
+                // Jeśli nie działa, próbujemy ścieżkę dla podstron
+                response = await fetch(`../components/${componentName}.html`);
+                if (!response.ok) {
+                    throw new Error(`Component not found in parent path`);
+                }
             }
             
             const html = await response.text();
@@ -36,7 +47,7 @@ async function loadComponents() {
             activateScripts(element);
             
             // Specjalne zachowanie dla nawigacji - podświetl aktywną stronę
-            if (componentName === 'navigation') {
+            if (componentName === 'navigation' || componentName === 'navigation2') {
                 highlightActiveMenuItem();
             }
             
@@ -90,19 +101,19 @@ function highlightActiveMenuItem() {
         
         // Sprawdź, czy to strona główna
         if ((currentPath === '/' || currentPath.endsWith('index.html')) && 
-            (href === 'index.html' || href === '/')) {
+            (href === 'index.html' || href === '/' || href === '../index.html')) {
             link.classList.add('active');
         } 
         // Sprawdź głębokość ścieżki i dostosuj odpowiednio
         else if (currentPath.includes('/blog/') || currentPath.includes('/projects/')) {
             // Dla stron w podfolderach
-            if ((currentPath.includes('/blog/') && href === 'blog.html') || 
-                (currentPath.includes('/projects/') && href === 'projects.html')) {
+            if ((currentPath.includes('/blog/') && (href === 'blog.html' || href === '../blog.html')) || 
+                (currentPath.includes('/projects/') && (href === 'projects.html' || href === '../projects.html'))) {
                 link.classList.add('active');
             }
         } 
         // Dopasuj normalne strony
-        else if (currentPage === href) {
+        else if (currentPage === href || (href.includes(currentPage) && href.indexOf('/') > -1)) {
             link.classList.add('active');
         }
     });
