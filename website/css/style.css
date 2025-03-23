@@ -13,6 +13,7 @@ header.pixel-border {
     margin-bottom: 20px;
     text-align: center;
     padding: 30px 20px;
+    width: 100%;
 }
 
 .pixel-text {
@@ -37,6 +38,7 @@ header.pixel-border {
 /* Navigation Styles */
 nav.pixel-border {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 nav ul {
@@ -76,6 +78,7 @@ footer.pixel-border {
     margin-top: 30px;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .footer-content {
@@ -300,7 +303,11 @@ footer.pixel-border {
     font-family: 'Press Start 2P', cursive;
     font-size: 20px;
     color: var(--pixel-purple-light);
-    margin: 20px 0 15px;
+    margin: 40px 0 20px; /* Increased top margin from 20px to 40px */
+}
+
+.about-content h3:first-of-type {
+    margin-top: 10px;
 }
 
 /* Skills */
@@ -479,6 +486,25 @@ footer.pixel-border {
     color: white;
 }
 
+/* Main content uniformity fixes */
+main {
+    width: 100%;
+}
+
+main > section.pixel-border,
+main > article.pixel-border {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Blog post and project page container sizing */
+.blog-post,
+.project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .pixel-text {
@@ -497,6 +523,18 @@ footer.pixel-border {
     nav ul {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    
+    nav li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .nav-button {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     
     .timeline::before {

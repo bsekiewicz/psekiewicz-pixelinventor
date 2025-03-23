@@ -2,8 +2,9 @@
 
 /* Blog Post Container */
 .blog-post {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Post Header */
@@ -174,26 +175,14 @@
     text-align: right;
 }
 
-.nav-link {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
+.post-question {
+    font-size: 16px;
     color: var(--pixel-blue);
-    text-decoration: none;
-    padding: 8px 12px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-    transition: all 0.2s;
-    display: inline-flex;
-    align-items: center;
-}
-
-.nav-link i {
-    margin: 0 8px;
-}
-
-.nav-link:hover {
-    background-color: var(--pixel-purple);
-    color: white;
+    margin: 40px 0 20px;
+    padding: 15px;
+    background-color: rgba(124, 77, 255, 0.1);
+    border-radius: 8px;
+    font-style: italic;
 }
 
 .nav-link.disabled {
